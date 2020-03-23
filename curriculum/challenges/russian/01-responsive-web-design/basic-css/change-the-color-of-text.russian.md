@@ -16,7 +16,6 @@ localeTitle: Изменение цвета текста
 <section id='instructions'>
 Измените свой стиль элемента <code>h2</code> так, чтобы его цвет текста был красным.
 
-Testele traduse de Dima
 </section>
 
 ## Tests

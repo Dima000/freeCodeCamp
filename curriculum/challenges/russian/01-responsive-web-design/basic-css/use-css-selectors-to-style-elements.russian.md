@@ -22,15 +22,15 @@ localeTitle: Используйте селекторы CSS для изменен
 
 ```yml
 tests:
-  - text: Remove the style attribute from your <code>h2</code> element.
+  - text: Sterge atributul style din elementul tau <code>h2</code>
     testString: assert(!$("h2").attr("style"));
-  - text: Create a <code>style</code> element.
+  - text: Creaza un element HTML <code>style</code>.
     testString: assert($("style") && $("style").length >= 1);
-  - text: Your <code>h2</code> element should be blue.
+  - text: Elementul tau <code>h2</code> trebuie sa fie de culoare albastru.
     testString: assert($("h2").css("color") === "rgb(0, 0, 255)");
-  - text: Ensure that your stylesheet <code>h2</code> declaration is valid with a semicolon and closing brace.
+  - text: Asigurate ca regula CSS pentru <code>h2</code> este scrisa correct cu punct si virgula(eng semicolon) si paranteza de inchidere.
     testString: assert(code.match(/h2\s*\{\s*color\s*:.*;\s*\}/g));
-  - text: Make sure all your <code>style</code> elements are valid and have a closing tag.
+  - text: Asigurate ca toate elementele tale <code>style</code> sunt valide si au un tag de inchidere.
     testString: assert(code.match(/<\/style>/g) && code.match(/<\/style>/g).length === (code.match(/<style((\s)*((type|media|scoped|title|disabled)="[^"]*")?(\s)*)*>/g) || []).length);
 
 ```
