@@ -22,13 +22,13 @@ localeTitle: Добавление разных полей в каждую сто
 
 ```yml
 tests:
-  - text: Your <code>blue-box</code> class should give the top of elements <code>40px</code> of <code>margin</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>40px</code> de <code>margin</code> in partea de sus (top).
     testString: assert($(".blue-box").css("margin-top") === "40px");
-  - text: Your <code>blue-box</code> class should give the right of elements <code>20px</code> of <code>margin</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>20px</code> de <code>margin</code> in partea dreapta (right).
     testString: assert($(".blue-box").css("margin-right") === "20px");
-  - text: Your <code>blue-box</code> class should give the bottom of elements <code>20px</code> of <code>margin</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>20px</code> de <code>margin</code> in partea de jos (bottom).
     testString: assert($(".blue-box").css("margin-bottom") === "20px");
-  - text: Your <code>blue-box</code> class should give the left of elements <code>40px</code> of <code>margin</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>40px</code> de <code>margin</code> in partea stanga (left).
     testString: assert($(".blue-box").css("margin-left") === "40px");
 
 ```

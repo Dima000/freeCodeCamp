@@ -22,13 +22,13 @@ localeTitle: Используйте селектор класса в CSS для 
 
 ```yml
 tests:
-  - text: Your <code>h2</code> element should be red.
+  - text: Elementul tau <code>h2</code> trebuie sa fie rosu.
     testString: assert($("h2").css("color") === "rgb(255, 0, 0)");
-  - text: Your <code>h2</code> element should have the class <code>red-text</code>.
+  - text: Elementul tau <code>h2</code> trebuie sa contina clasa <code>red-text</code>.
     testString: assert($("h2").hasClass("red-text"));
-  - text: Your stylesheet should declare a <code>red-text</code> class and have its color set to red.
+  - text: Elementul tau style trebuie sa declare o clasa <code>red-text</code> si sa aiba culoarea acesteia in rosu.
     testString: assert(code.match(/\.red-text\s*\{\s*color\s*:\s*red;\s*\}/g));
-  - text: Do not use inline style declarations like <code>style="color&#58; red"</code> in your <code>h2</code> element.
+  - text: NU folosi declaratii de stil inline (inline style declarations) precum <code>style="color&#58; red"</code> in elementul tau <code>h2</code>.
     testString: assert($("h2").attr("style") === undefined);
 
 ```

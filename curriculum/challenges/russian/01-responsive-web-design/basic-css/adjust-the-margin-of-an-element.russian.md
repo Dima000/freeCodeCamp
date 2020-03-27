@@ -22,7 +22,7 @@ localeTitle: Отрегулируйте маржу элемента
 
 ```yml
 tests:
-  - text: Your <code>blue-box</code> class should give elements <code>20px</code> of <code>margin</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>20px</code> de <code>margin</code>.
     testString: assert($(".blue-box").css("margin-top") === "20px");
 
 ```

@@ -22,7 +22,7 @@ localeTitle: Создание пользовательской переменн�
 
 ```yml
 tests:
-  - text: <code>penguin</code> class should declare the <code>--penguin-skin</code> variable and assign it to <code>gray</code>.
+  - text: Clasa ta <code>penguin</code> trebuie sa contina variabila <code>--penguin-skin</code> care va avea valoarea <code>gray</code>.
     testString: assert(code.match(/.penguin\s*?{[\s\S]*--penguin-skin\s*?:\s*?gray\s*?;[\s\S]*}/gi));
 
 ```

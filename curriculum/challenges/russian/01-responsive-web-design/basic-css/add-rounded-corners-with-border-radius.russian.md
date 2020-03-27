@@ -22,9 +22,9 @@ localeTitle: Добавить закругленные углы при помо�
 
 ```yml
 tests:
-  - text: Your image element should have the class "thick-green-border".
+  - text: Elementul tau imagine trebuie sa aiba clasa <code>thick-green-border</code>.
     testString: assert($("img").hasClass("thick-green-border"));
-  - text: Your image should have a border radius of <code>10px</code>
+  - text: Imaginea ta trebuie sa aiba un radius al frontierei (border radius) de <code>10px</code>
     testString: assert($("img").css("border-top-left-radius") === '10px' && $("img").css("border-top-right-radius") === '10px' && $("img").css("border-bottom-left-radius") === '10px' && $("img").css("border-bottom-right-radius") === '10px');
 
 ```

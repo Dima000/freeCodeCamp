@@ -23,11 +23,11 @@ localeTitle: Изменение цвета текста
 
 ```yml
 tests:
-  - text: Elementul <code>h2</code> trebuie sa aiba declarat un atribut <code>style</code>.
+  - text: Elementul tau <code>h2</code> trebuie sa aiba declarat un atribut <code>style</code>.
     testString: assert($("h2").attr('style'));
-  - text: Elementul dvs. <code>h2</code> trebuie sa apara cu rosu.
+  - text: Elementul tau <code>h2</code> trebuie sa apara cu rosu.
     testString: assert($("h2").css("color") === "rgb(255, 0, 0)");
-  - text: Declaratia dvs. <code>style</code> trebuie sa se incheie cu <code>;</code> .
+  - text: Declaratia atributului <code>style</code> trebuie sa se incheie cu <code>;</code> (semicolon) .
     testString: assert($("h2").attr('style') && $("h2").attr('style').endsWith(';'));
 
 ```

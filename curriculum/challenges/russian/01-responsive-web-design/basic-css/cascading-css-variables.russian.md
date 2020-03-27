@@ -13,7 +13,7 @@ localeTitle: Каскадные переменные CSS
 
 ## Instructions
 <section id='instructions'>
-Определите переменную с именем <code>--penguin-belly</code> в селекторе <code>:root</code> и придайте ей значение <code>pink</code> . Затем вы можете увидеть, как значение будет каскадно вниз, чтобы изменить значение на розовый, где бы ни была эта переменная.
+Определите переменную (variable) с именем <code>--penguin-belly</code> в селекторе <code>:root</code> и придайте ей значение <code>pink</code> . Затем вы можете увидеть, как значение будет каскадно вниз, чтобы изменить значение на розовый, где бы ни была эта переменная.
 </section>
 
 ## Tests
@@ -21,7 +21,7 @@ localeTitle: Каскадные переменные CSS
 
 ```yml
 tests:
-  - text: 'объявите переменную <code>--penguin-belly</code> в <code>:root</code> и назначьте ее <code>pink</code> .'
+  - text: Defineste o variabila (variable) <code>--penguin-belly</code> in selectorul <code>:root</code> si atribuiei valoarea <code>pink</code>.'
     testString: 'assert(code.match(/:root\s*?{[\s\S]*--penguin-belly\s*?:\s*?pink\s*?;[\s\S]*}/gi), "declare the <code>--penguin-belly</code> variable in the <code>:root</code> and assign it to <code>pink</code>.");'
 ```
 

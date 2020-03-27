@@ -22,13 +22,13 @@ localeTitle: Использовать атрибут id для стилиров�
 
 ```yml
 tests:
-  - text: Give your <code>form</code> element the id of <code>cat-photo-form</code>.
+  - text: Dai elementului tau <code>form</code> un id cu valoarea <code>cat-photo-form</code>.
     testString: assert($("form").attr("id") === "cat-photo-form");
-  - text: Your <code>form</code> element should have the <code>background-color</code> of green.
+  - text: Elementul tau <code>form</code> trebuie sa aiba o culoare de fundal (<code>background-color</code>) verde (green).
     testString: assert($("#cat-photo-form").css("background-color") === "rgb(0, 128, 0)");
-  - text: Make sure your <code>form</code> element has an <code>id</code> attribute.
+  - text: Asigurate ca elementul tau <code>form</code> are un atribut <code>id</code>.
     testString: assert(code.match(/<form.*cat-photo-form.*>/gi) && code.match(/<form.*cat-photo-form.*>/gi).length > 0);
-  - text: Do not give your <code>form</code> any <code>class</code> or <code>style</code> attributes.
+  - text: Elementul tau <code>form</code> NU trebuie sa contina nici o <code>class</code> sau atribut <code>style</code>.
     testString: assert(!code.match(/<form.*style.*>/gi) && !code.match(/<form.*class.*>/gi));
 
 ```

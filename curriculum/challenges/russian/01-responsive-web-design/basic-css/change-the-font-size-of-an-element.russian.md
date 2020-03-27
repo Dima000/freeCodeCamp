@@ -22,7 +22,7 @@ localeTitle: Изменение размера шрифта элемента
 
 ```yml
 tests:
-  - text: Between the <code>style</code> tags, give the <code>p</code> elements <code>font-size</code> of <code>16px</code>. Browser and Text zoom should be at 100%.
+  - text: In interiorul elementului <code>style</code>, atribuie elementului <code>p</code> un <code>font-size</code> de <code>16px</code>. **Remarca: Dimensiunea la zoom in browser trebuie sa fie 100%
     testString: assert(code.match(/p\s*{\s*font-size\s*:\s*16\s*px\s*;\s*}/i));
 
 ```

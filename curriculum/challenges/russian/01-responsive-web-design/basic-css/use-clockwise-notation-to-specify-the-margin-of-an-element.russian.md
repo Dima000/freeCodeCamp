@@ -22,15 +22,15 @@ localeTitle: Используйте обозначение по часовой �
 
 ```yml
 tests:
-  - text: Your <code>blue-box</code> class should give the top of elements <code>40px</code> of <code>margin</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>40px</code> de <code>margin</code> in partea de sus (top).
     testString: assert($(".blue-box").css("margin-top") === "40px");
-  - text: Your <code>blue-box</code> class should give the right of elements <code>20px</code> of <code>margin</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>20px</code> de <code>margin</code> in partea dreapta (right).
     testString: assert($(".blue-box").css("margin-right") === "20px");
-  - text: Your <code>blue-box</code> class should give the bottom of elements <code>20px</code> of <code>margin</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>20px</code> de <code>margin</code> in partea de jos (bottom).
     testString: assert($(".blue-box").css("margin-bottom") === "20px");
-  - text: Your <code>blue-box</code> class should give the left of elements <code>40px</code> of <code>margin</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>40px</code> de <code>margin</code> in partea stanga (left).
     testString: assert($(".blue-box").css("margin-left") === "40px");
-  - text: You should use the clockwise notation to set the margin of <code>blue-box</code> class.
+  - text: Trebuie sa folosesti notatia dupa acele ceasornicului (clockwise notation) pentru a seta marginile clasei <code>blue-box</code>.
     testString: const removeCssComments = str => str.replace(/\/\*[\s\S]+?\*\//g, '');assert(/\.blue-box\s*{[\s\S]*margin[\s]*:\s*\d+px\s+\d+px\s+\d+px\s+\d+px(;\s*[^}]+\s*}|;?\s*})/.test(removeCssComments($('style').text())));
 
 ```

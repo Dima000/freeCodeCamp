@@ -22,7 +22,7 @@ localeTitle: Изменение переменной для определенн
 
 ```yml
 tests:
-  - text: The <code>penguin</code> class should reassign the <code>--penguin-belly</code> variable to <code>white</code>.
+  - text: Clasa <code>penguin</code> trebuie sa redeclare variabila <code>--penguin-belly</code> cu valoarea <code>white</code>.
     testString: assert(code.match(/.penguin\s*?{[\s\S]*--penguin-belly\s*?:\s*?white\s*?;[\s\S]*}/gi));
 
 ```
