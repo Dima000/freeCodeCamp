@@ -24,11 +24,11 @@ localeTitle: Импорт шрифта Google
 tests:
   - text: Import the <code>Lobster</code> font.
     testString: assert(new RegExp("googleapis", "gi").test(code));
-  - text: Your <code>h2</code> element should use the font <code>Lobster</code>.
+  - text: Elementul tau <code>h2</code> trebuie sa aiba fontul <code>Lobster</code>.
     testString: assert($("h2").css("font-family").match(/lobster/i));
-  - text: Use an <code>h2</code> CSS selector to change the font.
+  - text: Foloseste un <code>h2</code> selector de CSS pentru a modifica fontul.
     testString: assert(/\s*h2\s*\{\s*font-family\:\s*(\"|")?Lobster(\"|")?(.{0,})\s*;\s*\}/gi.test(code));
-  - text: Your <code>p</code> element should still use the font <code>monospace</code>.
+  - text: Elementul <code>p</code> trebuie sa ramana cu fontul <code>monospace</code>.
     testString: assert($("p").css("font-family").match(/monospace/i));
 
 ```

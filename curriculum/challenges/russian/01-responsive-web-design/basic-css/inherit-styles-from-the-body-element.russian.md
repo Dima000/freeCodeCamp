@@ -22,19 +22,19 @@ localeTitle: Наследовать стили из элемента тела
 
 ```yml
 tests:
-  - text: Create an <code>h1</code> element.
+  - text: Creaza un element <code>h1</code>.
     testString: assert(($("h1").length > 0));
-  - text: Your <code>h1</code> element should have the text <code>Hello World</code>.
+  - text: Elemetul tau <code>h1</code> trebuie sa contina textul <code>Hello World</code>.
     testString: assert(($("h1").length > 0 && $("h1").text().match(/hello world/i)));
-  - text: Make sure your <code>h1</code> element has a closing tag.
+  - text: Asigurate ca elemetul <code>h1</code> are un tag de inchidere.
     testString: assert(code.match(/<\/h1>/g) && code.match(/<h1/g) && code.match(/<\/h1>/g).length === code.match(/<h1/g).length);
-  - text: Give your <code>body</code> element the <code>color</code> property of <code>green</code>.
+  - text: Atribuie elementului <code>body</code> proprietatea de stil <code>color</code> cu valoarea <code>green</code>.
     testString: assert(($("body").css("color") === "rgb(0, 128, 0)"));
-  - text: Give your <code>body</code> element the <code>font-family</code> property of <code>monospace</code>.
+  - text: Atribuie elementului <code>body</code> proprietatea de stil <code>font-family</code> cu valoarea <code>monospace</code>.
     testString: assert(($("body").css("font-family").match(/monospace/i)));
-  - text: Your <code>h1</code> element should inherit the font <code>monospace</code> from your <code>body</code> element.
+  - text: Elentul tau <code>h1</code> trebuie sa mosteneasca (inherit) fontul <code>monospace</code> de la elementul tau <code>body</code>.
     testString: assert(($("h1").length > 0 && $("h1").css("font-family").match(/monospace/i)));
-  - text: Your <code>h1</code> element should inherit the color green from your <code>body</code> element.
+  - text: Elementul tau <code>h1</code> trebuie sa mosteneasca (inherit) culoare verde (color green) de la elementul tau <code>body</code>.
     testString: assert(($("h1").length > 0 && $("h1").css("color") === "rgb(0, 128, 0)"));
 
 ```

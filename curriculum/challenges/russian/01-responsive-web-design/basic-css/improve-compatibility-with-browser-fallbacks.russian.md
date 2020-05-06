@@ -22,7 +22,7 @@ localeTitle: Улучшение совместимости с отказами �
 
 ```yml
 tests:
-  - text: Your <code>.red-box</code> rule should include a fallback with the <code>background</code> set to red immediately before the existing <code>background</code> declaration.
+  - text: Regula <code>.red-box</code> trebuie sa includa o valoare de rezerva (fallback value) cu proprietatea <code>background</code> pusa pe rosu(<code>red</code>) imediat mai sus de declaratia <code>background</code>.
     testString: assert(code.replace(/\s/g, "").match(/\.red-box{background:(red|#ff0000|#f00|rgb\(255,0,0\)|rgb\(100%,0%,0%\)|hsl\(0,100%,50%\));background:var\(--red-color\);height:200px;width:200px;}/gi));
 
 ```

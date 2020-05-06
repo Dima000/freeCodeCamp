@@ -22,7 +22,7 @@ localeTitle: Добавить отрицательные поля к элеме�
 
 ```yml
 tests:
-  - text: Your <code>blue-box</code> class should give elements <code>-15px</code> of <code>margin</code>.
+  - text: Clasa ta <code>blue-box</code> trebuie sa le dea elementelor <code>-15px</code> de <code>margin</code>.
     testString: assert($(".blue-box").css("margin-top") === "-15px");
 
 ```

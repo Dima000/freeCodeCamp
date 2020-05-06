@@ -22,15 +22,15 @@ localeTitle: Использовать по часовой стрелке для 
 
 ```yml
 tests:
-  - text: Your <code>blue-box</code> class should give the top of elements <code>40px</code> of <code>padding</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>40px</code> de <code>padding</code> in partea de sus (top).
     testString: assert($(".blue-box").css("padding-top") === "40px");
-  - text: Your <code>blue-box</code> class should give the right of elements <code>20px</code> of <code>padding</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>20px</code> de <code>padding</code> in partea dreapta (right).
     testString: assert($(".blue-box").css("padding-right") === "20px");
-  - text: Your <code>blue-box</code> class should give the bottom of elements <code>20px</code> of <code>padding</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>20px</code> de <code>padding</code> in partea de jos (bottom).
     testString: assert($(".blue-box").css("padding-bottom") === "20px");
-  - text: Your <code>blue-box</code> class should give the left of elements <code>40px</code> of <code>padding</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>40px</code> de <code>padding</code> in partea stanga (left).
     testString: assert($(".blue-box").css("padding-left") === "40px");
-  - text: You should use the clockwise notation to set the padding of <code>blue-box</code> class.
+  - text: Trebuie sa folosesti notatia dupa acele ceasornicului (clockwise notation) pentru a seta padding-ul clasei <code>blue-box</code>.
     testString: const removeCssComments = str => str.replace(/\/\*[\s\S]+?\*\//g, '');assert(/\.blue-box\s*{[\s\S]*padding[\s]*:\s*\d+px\s+\d+px\s+\d+px\s+\d+px(;\s*[^}]+\s*}|;?\s*})/.test(removeCssComments($('style').text())));
 
 ```

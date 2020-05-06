@@ -22,17 +22,17 @@ localeTitle: Переопределите все остальные стили, 
 
 ```yml
 tests:
-  - text: Your <code>h1</code> element should have the class <code>pink-text</code>.
+  - text: Elementul tau <code>h1</code> trebuie sa contina clasa <code>pink-text</code>.
     testString: assert($("h1").hasClass("pink-text"));
-  - text: Your <code>h1</code> element should have the class <code>blue-text</code>.
+  - text: Elementul tau <code>h1</code> trebuie sa contina clasa <code>blue-text</code>.
     testString: assert($("h1").hasClass("blue-text"));
-  - text: Your <code>h1</code> element should have the id of <code>orange-text</code>.
+  - text: Elemntul tau <code>h1</code> trebuie sa aiba un id cu valoarea <code>orange-text</code>.
     testString: assert($("h1").attr("id") === "orange-text");
-  - text: Your <code>h1</code> element should have the inline style of <code>color&#58; white</code>.
+  - text: Elementul tau <code>h1</code> trebuie sa aiba un stil pe element (inline style) <code>color&#58; white</code>.
     testString: assert(code.match(/<h1.*style/gi) && code.match(/<h1.*style.*color\s*?:/gi));
-  - text: Your <code>pink-text</code> class declaration should have the <code>!important</code> keyword to override all other declarations.
+  - text: Clasa ta <code>pink-text</code> trebuie sa contina cuvintele de final <code>!important</code> pentru a suprascrie valorile de la celelalte clase.
     testString: assert(code.match(/\.pink-text\s*?\{[\s\S]*?color:.*pink.*!important\s*;?[^\.]*\}/g));
-  - text: Your <code>h1</code> element should be pink.
+  - text: Elementul <code>h1</code> trebuie sa aiba culoarea roz (pink).
     testString: assert($("h1").css("color") === "rgb(255, 192, 203)");
 
 ```

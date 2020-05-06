@@ -22,7 +22,7 @@ localeTitle: Отрегулируйте прокладку элемента
 
 ```yml
 tests:
-  - text: Your <code>blue-box</code> class should give elements <code>20px</code> of <code>padding</code>.
+  - text: Clasa ta <code>blue-box</code> trebuie sa le atribuie elementelor <code>20px</code> de <code>padding</code>.
     testString: assert($(".blue-box").css("padding-top") === "20px");
 
 ```

@@ -22,9 +22,9 @@ localeTitle: Создание изображения формы - круг с п
 
 ```yml
 tests:
-  - text: Your image should have a border radius of <code>50%</code>, making it perfectly circular.
+  - text: Imaginea ta trebuie sa aiba un radius al frontierei (border radius) de <code>50%</code>, astfel devening un cerc.
     testString: assert(parseInt($("img").css("border-top-left-radius")) > 48);
-  - text: Be sure to use a percentage value of <code>50%</code>.
+  - text: Asigurate ca foloseste o valoare in procente, adica <code>50%</code>.
     testString: assert(code.match(/50%/g));
 
 ```

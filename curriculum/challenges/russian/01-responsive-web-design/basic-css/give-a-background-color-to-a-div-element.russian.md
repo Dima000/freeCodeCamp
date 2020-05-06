@@ -22,11 +22,11 @@ localeTitle: Задайте цвет фона элементу div
 
 ```yml
 tests:
-  - text: Give your <code>div</code> element the class <code>silver-background</code>.
+  - text: Atribuie elementului <code>div</code> clasa <code>silver-background</code>.
     testString: assert($("div").hasClass("silver-background"));
-  - text: Your <code>div</code> element should have a silver background.
+  - text: Elementul <code>div</code> trebuie sa aiba o culoare de fundal argintie (a silver background).
     testString: assert($("div").css("background-color") === "rgb(192, 192, 192)");
-  - text: Define a class named <code>silver-background</code> within the <code>style</code> element and assign the value of <code>silver</code> to the <code>background-color</code> property.
+  - text: Defineste o clasa cu numele <code>silver-background</code> in interiorul elementului <code>style</code> si asigneaza valoarea <code>silver</code> pentru regula <code>background-color</code>.
     testString: assert(code.match(/\.silver-background\s*{\s*background-color:\s*silver;\s*}/));
 
 ```

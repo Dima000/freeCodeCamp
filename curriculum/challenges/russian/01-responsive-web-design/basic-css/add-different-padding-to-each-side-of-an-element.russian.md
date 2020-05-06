@@ -22,13 +22,13 @@ localeTitle: Добавьте разные внутренние отступы �
 
 ```yml
 tests:
-  - text: Your <code>blue-box</code> class should give the top of the elements <code>40px</code> of <code>padding</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>40px</code> de <code>padding</code> in partea de sus (top).
     testString: assert($(".blue-box").css("padding-top") === "40px");
-  - text: Your <code>blue-box</code> class should give the right of the elements <code>20px</code> of <code>padding</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>20px</code> de <code>padding</code> in partea dreapta (right).
     testString: assert($(".blue-box").css("padding-right") === "20px");
-  - text: Your <code>blue-box</code> class should give the bottom of the elements <code>20px</code> of <code>padding</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>20px</code> de <code>padding</code> in partea de jos (bottom).
     testString: assert($(".blue-box").css("padding-bottom") === "20px");
-  - text: Your <code>blue-box</code> class should give the left of the elements <code>40px</code> of <code>padding</code>.
+  - text: Clasa <code>blue-box</code> trebuie sa le atribuie elementelor <code>40px</code> de <code>padding</code> in partea stanga (left).
     testString: assert($(".blue-box").css("padding-left") === "40px");
 
 ```

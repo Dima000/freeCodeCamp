@@ -15,6 +15,7 @@ localeTitle: Изменение цвета текста
 ## Instructions
 <section id='instructions'>
 Измените свой стиль элемента <code>h2</code> так, чтобы его цвет текста был красным.
+
 </section>
 
 ## Tests
@@ -22,11 +23,11 @@ localeTitle: Изменение цвета текста
 
 ```yml
 tests:
-  - text: Your <code>h2</code> element should have a <code>style</code> declaration.
+  - text: Elementul tau <code>h2</code> trebuie sa aiba declarat un atribut <code>style</code>.
     testString: assert($("h2").attr('style'));
-  - text: Your <code>h2</code> element should be red.
+  - text: Elementul tau <code>h2</code> trebuie sa apara cu rosu.
     testString: assert($("h2").css("color") === "rgb(255, 0, 0)");
-  - text: Your <code>style</code> declaration should end with a <code>;</code> .
+  - text: Declaratia atributului <code>style</code> trebuie sa se incheie cu <code>;</code> (semicolon) .
     testString: assert($("h2").attr('style') && $("h2").attr('style').endsWith(';'));
 
 ```
